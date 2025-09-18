@@ -1,7 +1,9 @@
 # NTI intershipe final project
 
 <img width="960" height="464" alt="Image" src="https://github.com/user-attachments/assets/5de6a6f8-15db-4154-8e5d-998652b90ec7" />
-#  Machine Learning Analysis of Player Statistics
+---
+
+# Machine Learning Analysis of Player Statistics
 
 ---
 
