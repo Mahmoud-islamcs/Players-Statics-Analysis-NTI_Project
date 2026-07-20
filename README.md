@@ -1,115 +1,80 @@
-# NTI intershipe final project
+# Players Statistics Analysis
 
-<img width="960" height="464" alt="Image" src="https://github.com/user-attachments/assets/5de6a6f8-15db-4154-8e5d-998652b90ec7" />
----
-
-# Machine Learning Analysis of Player Statistics
+Analyze top-5 European league footballers and predict player position & goal output using machine learning, all served through an interactive Streamlit dashboard.
 
 ---
 
-## 📊 Overview
+## Team
 
-This project leverages **machine learning** and **data visualization** techniques to analyze and compare the performance of football players across the **top 5 European leagues**: Premier League, La Liga, Serie A, Bundesliga, and Ligue 1.
+**Aya Kamal &middot; Lama Nezar &middot; Khaled Zakria &middot; Mahmoud Islam &middot; Adham Mohammed**
 
-The goal is to assist **football scouts and analysts** in identifying top-performing players through advanced statistical insights and predictive modeling.
+> *"Let data guide your scouting decisions."*
 
-## 👨‍💻 Team
+---
 
-- **Aya kamal**
-- **Lama Nezar**
-- **Khaled Zakria**
-- **Mahmoud Islam**
-- **Adham Mohammed**
+## Features
 
-## 🎯 Mission
+- **Data Overview** — Explore the cleaned dataset, position distribution, and top performers
+- **Position Prediction** — Classify a player's role (DF / MF / FW / GK) from their stats (Random Forest, 75.7% accuracy)
+- **Goals Prediction** — Forecast total goals scored using linear regression (R&#178; = 0.845)
+- **Model Comparison** — Compare 4 classification and 4 regression models side-by-side
 
-> To simplify and empower the scouting process by providing intuitive, data-driven insights into player performance using machine learning models and Power BI visualizations.
+## Data Workflow
 
-## 🔍 Data Workflow
+1. **Data Cleaning** — Removed inaccuracies, handled missing values, ensured consistency across metrics
+2. **Exploration** — Analyzed league-wide trends (goal distribution, player positions, age breakdown, disciplinary records)
+3. **Visualization** — Built interactive Power BI dashboards for top players, goal/assist breakdowns, and scouting comparisons
+4. **Machine Learning** — Trained and evaluated classification and regression models to predict position and goal output
 
-### 1. 🧼 Data Cleaning
+## Results
 
-- Removed inaccuracies and missing values
-- Ensured consistency in metrics like goals, assists, xG, xA, etc.
+| Task | Best Model | Metric | Score |
+|------|-----------|--------|-------|
+| Position Prediction | Random Forest | Accuracy | 75.7% |
+| Goals Prediction | Linear Regression | R&#178; | 0.845 |
 
-### 2. 📈 Data Exploration
+**Top 5 identified players:** Kylian Mbappe &middot; Harry Kane &middot; Cole Palmer &middot; Artem Dovbyk &middot; Lautaro Martinez
 
-- Analyzed league-wide trends (e.g., goal distribution, player positions, age breakdown)
-- Visualized stats by age, nationality, position, and disciplinary records (yellow/red cards)
+## Tech Stack
 
-### 3. 📊 Data Visualization
+![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
+![Streamlit](https://img.shields.io/badge/Streamlit-1.51-red?logo=streamlit)
+![Plotly](https://img.shields.io/badge/Plotly-5.24-3cb371?logo=plotly)
+![scikit-learn](https://img.shields.io/badge/scikit_learn-1.6-orange?logo=scikit-learn)
+![Power BI](https://img.shields.io/badge/Power_BI-F2C811?logo=powerbi&logoColor=black)
+![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas)
+![NumPy](https://img.shields.io/badge/NumPy-013243?logo=numpy)
 
-- Built interactive Power BI dashboards
-- Showcased:
-  - Top players in each league
-  - Goal/Assist breakdowns
-  - Player comparisons by position
-  - Predictions for breakout seasons
+## Project Structure
 
-### 4. 🤖 Machine Learning Models
-
-#### Classification:
-
-- **Random Forest** (Best Accuracy)
-- Support Vector Machine (SVM)
-- Decision Tree
-- Neural Networks
-
-#### Regression:
-
-- **Linear Regression** (Best MSE and R² Score)
-- Random Forest
-- Neural Networks
-
-Used to predict:
-
-- Total score
-- Goal/assist potential
-- Player value indicators
-
-## 🛠 Tools & Technologies
-
-- **Python** (Data processing, ML)
-- **Power BI** (Visualization)
-- **Pandas / NumPy / Scikit-learn**
-- **Matplotlib / Seaborn**
-
-## 📌 Key Features
-
-- Interactive stats dashboard for all players
-- League-wise player performance comparisons
-- ML-driven predictions for scouting
-- Easy selection and comparison by player or position
-
-## 📽️ Demo & Presentation
-
-[Add link to presentation/demo video if available]
-
-## 📂 Project Structure
-
-```bash
-├── data/                  # Cleaned and raw datasets
-├── notebooks/             # Jupyter notebooks for EDA and ML
-├── visualizations/        # Power BI screenshots or .pbix files
-├── models/                # Saved machine learning models
-├── README.md              # Project documentation
+```
+├── app.py                  # Streamlit application
+├── requirements.txt        # Python dependencies
+├── data/
+│   ├── cleaned_data.csv    # Preprocessed player statistics
+│   └── top5-players.csv    # Raw dataset (top 5 leagues)
+├── notebooks/
+│   └── Final Code.ipynb    # Full EDA & model training notebook
+├── docs/
+│   └── Machine Learnging Analysis of player stastics_compressed.pdf.pdf
+└── README.md
 ```
 
-## ✅ Results
+## Quick Start
 
-- **Best Classifier**: Random Forest
-- **Best Regressor**: Linear Regression
-- Helped identify top 5 players:
-  - Kylian Mbappé
-  - Harry Kane
-  - Cole Palmer
-  - Artem Dovbyk
-  - Lautaro Martínez
+```bash
+git clone https://github.com/Mahmoud-islamcs/Players-Statics-Analysis-NTI_Project.git
+cd Players-Statics-Analysis-NTI_Project
+pip install -r requirements.txt
+streamlit run app.py
+```
 
-## 🙌 Thank You
+## Live App
 
-Your feedback is welcome! If you're a football fan, scout, or data enthusiast — we’d love to hear your thoughts or collaborate.
+[ ![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg) ](https://YOUR-APP-URL.streamlit.app)
 
----
+*(Replace the badge URL with your deployed Streamlit Community Cloud link.)*
 
-> _"Let data guide your scouting decisions."_
+## Feedback
+
+If you are a football fan, scout, or data enthusiast, we would love to hear your thoughts or collaborate.
