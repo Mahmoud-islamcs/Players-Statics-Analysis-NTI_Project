@@ -71,7 +71,7 @@ streamlit run app.py
 
 ## Live App
 
-[ ![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg) ](https://YOUR-APP-URL.streamlit.app)
+[ ![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg) ](https://players-statics-analysis.streamlit.app/)
 
 *(Replace the badge URL with your deployed Streamlit Community Cloud link.)*
 
