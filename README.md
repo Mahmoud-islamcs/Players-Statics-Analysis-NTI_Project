@@ -1,6 +1,17 @@
+---
+title: Players Statistics Analysis
+emoji: ⚽
+colorFrom: blue
+colorTo: green
+sdk: gradio
+app_file: app.py
+pinned: false
+license: mit
+---
+
 # Players Statistics Analysis
 
-Analyze top-5 European league footballers and predict player position & goal output using machine learning, all served through an interactive Streamlit dashboard.
+Analyze top-5 European league footballers and predict player position & goal output using machine learning, all served through an interactive Gradio dashboard.
 
 ---
 
@@ -38,7 +49,7 @@ Analyze top-5 European league footballers and predict player position & goal out
 ## Tech Stack
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
-![Streamlit](https://img.shields.io/badge/Streamlit-1.51-red?logo=streamlit)
+![Gradio](https://img.shields.io/badge/Gradio-4.0+-orange?logo=gradio)
 ![Plotly](https://img.shields.io/badge/Plotly-5.24-3cb371?logo=plotly)
 ![scikit-learn](https://img.shields.io/badge/scikit_learn-1.6-orange?logo=scikit-learn)
 ![Power BI](https://img.shields.io/badge/Power_BI-F2C811?logo=powerbi&logoColor=black)
@@ -48,7 +59,10 @@ Analyze top-5 European league footballers and predict player position & goal out
 ## Project Structure
 
 ```
-├── app.py                  # Streamlit application
+├── core/
+│   ├── __init__.py         # Core package initialization
+│   └── models.py           # ML model training, evaluation & inference logic
+├── app.py                  # Gradio web application
 ├── requirements.txt        # Python dependencies
 ├── data/
 │   ├── cleaned_data.csv    # Preprocessed player statistics
@@ -66,14 +80,8 @@ Analyze top-5 European league footballers and predict player position & goal out
 git clone https://github.com/Mahmoud-islamcs/Players-Statics-Analysis-NTI_Project.git
 cd Players-Statics-Analysis-NTI_Project
 pip install -r requirements.txt
-streamlit run app.py
+python app.py
 ```
-
-## Live App
-
-[ ![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg) ](https://players-statics-analysis.streamlit.app/)
-
-*(Replace the badge URL with your deployed Streamlit Community Cloud link.)*
 
 ## Feedback
 
