@@ -1,4 +1,5 @@
 # pyrefly: ignore [missing-import]
+import os
 import gradio as gr
 import pandas as pd
 from core.models import (
@@ -203,4 +204,7 @@ with gr.Blocks(theme=gr.themes.Monochrome(), title="Players Statistics Analysis"
             gr.Markdown(summary_md)
 
 if __name__ == "__main__":
-    demo.launch()
+    demo.launch(
+        server_name="0.0.0.0",
+        server_port=int(os.environ.get("PORT", 7860))
+    )
